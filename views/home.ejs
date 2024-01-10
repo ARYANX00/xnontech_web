@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+</head>
+<body>
+    <div class="logout-btn" onclick="logout()">Logout</div>
+    <div class="container">
+        <div class="product">
+          <img src="/phoneimg.png" alt="Product Image">
+          <div class="product-info">
+            <div class="product-title">Mobile ABC</div>
+            <div class="product-price">$399.99</div>
+            <div class="add-to-cart" onclick="addToCart(2)">Add to Cart</div>
+          </div>
+        </div>
+      
+        <!-- Add more products as needed -->
+    
+
+<div class="container">
+  <h2>Beautiful Form</h2>
+  <form id="myForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <button type="button" onclick="submitForm()">Submit</button>
+  </form>
+
+  <div id="successMessage" class="success-message" style="display: none;">
+    Form submitted successfully! We wii get in Touch Soon
+  </div>
+</div>
+
+  
+</div>
+      
+<footer>
+  &copy; Mobile Store Chandigarh
+</footer>
+
+<script>
+  function submitForm() {
+    document.getElementById('successMessage').style.display = 'block';
+  }
+
+  function logout() {
+    window.location.href = 'index.js';
+  }
+</script>
+
+</body>
+</html>
